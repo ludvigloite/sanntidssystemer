@@ -28,9 +28,12 @@ int main(){
 
     pthread_t threadHandle;
     pthread_t threadHandle2;
+    pthread_t threadHandle3;
     pthread_create(&threadHandle, NULL, fn, NULL);
     pthread_create(&threadHandle2, NULL, fn, NULL);
+    pthread_create(&threadHandle3, NULL, fn, NULL);
     pthread_join(threadHandle, NULL);
     pthread_join(threadHandle2, NULL);
+    pthread_join(threadHandle3, NULL);
     return 0;
 }
